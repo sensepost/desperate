@@ -1,0 +1,44 @@
+Quick collection of "brute force" tools that I have found
+to be very simple yet effective. Yes I know its not state 
+of the art thingies...but it saved me a lot of time.
+So I share it. All coded in PERL. Modify as you wish. Redistribute
+as you wish without giving me credit. Go bananas...:)
+
+Roelof Temmingh 2001/02
+Sensepost roelof@sensepost.com
+
+Getting usernames
+=================
+
+fingers
+-------
+Does a whole lot of "fingers" on a host with commonly used usernames.
+Real easy. Effectively used to extract usernames when a host has the
+finger daemon running.
+
+Usage: perl fingers.pl <target>
+
+expn
+----
+Same as above - use it when the host's SMTP server allows you to do
+a EXPN. 
+
+Usage: perl expn.pl <target>
+
+Getting host names
+==================
+
+dnsbrute
+--------
+So you can't do a DNS zone transfer. Eish. This script will try to resolve
+commonly known DNS names - e.g ns1.target.com.
+
+Usage: perl dnsbrute.pl <target_domain> <list_to_test>
+
+I distribute it with some common names (common) and some Greek god names
+(greek), seeing that everyone use it.
+
+Have fun,
+Roelof.
+
+#sensepostdata desperate
